@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "name": "Devweekerson",
+    "account": {
+      "id": 1,
+      "number": "01.097954-4",
+      "agency": "2030",
+      "balance": 624.12,
+      "limit": 1000.0
+    },
+    "card": {
+      "id": 1,
+      "number": "xxxx xxxx xxxx 1111",
+      "limit": 2000.0
+    },
+    "features": [
+      {
+        "id": 1,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/pix.svg",
+        "description": "PIX"
+      },
+      {
+        "id": 2,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/pay.svg",
+        "description": "Pagar"
+      },
+      {
+        "id": 3,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/transfer.svg",
+        "description": "Transferir"
+      },
+      {
+        "id": 4,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/account.svg",
+        "description": "Conta Corrente"
+      },
+      {
+        "id": 5,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/cards.svg",
+        "description": "Cartões"
+      }
+    ],
+    "news": [
+      {
+        "id": 2,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/insurance.svg",
+        "description": "Santander Seguro Casa, seu faz-tudo. Mais de 50 serviços pra você. Confira!"
+      },
+      {
+        "id": 1,
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+        "description": "O Santander tem soluções de crédito sob medida pra você. Confira!"
+      },
+      {
+        "icon": "🤖",
+        "description": "Invista hoje para garantir seu futuro: seu dinheiro pode trabalhar por você! 💰✨"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ana Costa",
+    "account": {
+      "id": 2,
+      "number": "02.123456-7",
+      "agency": "3040",
+      "balance": 1500.0,
+      "limit": 2000.0
+    },
+    "card": {
+      "id": 2,
+      "number": "xxxx xxxx xxxx 2222",
+      "limit": 5000.0
+    },
+    "features": [],
+    "news": [
+      {
+        "icon": "🤖",
+        "description": "Oi Ana! Investir é garantir um futuro financeiramente seguro e realizar seus sonhos. Vamos começar?"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Carlos Mendes",
+    "account": {
+      "id": 3,
+      "number": "03.456789-1",
+      "agency": "5060",
+      "balance": 3200.75,
+      "limit": 3000.0
+    },
+    "card": {
+      "id": 3,
+      "number": "xxxx xxxx xxxx 3333",
+      "limit": 8000.0
+    },
+    "features": [
+      {
+        "id": 1,
+        "icon": "💸",
+        "description": "PIX Instantâneo"
+      },
+      {
+        "id": 2,
+        "icon": "📱",
+        "description": "App Mobile"
+      },
+      {
+        "id": 3,
+        "icon": "🏦",
+        "description": "Conta Digital"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "icon": "📈",
+        "description": "Invista com poupança programada e cresça seu patrimônio."
+      },
+      {
+        "id": 2,
+        "icon": "🛡️",
+        "description": "Seguro viagem: proteja suas férias por menos de R$5/dia."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Juliana Alves",
+    "account": {
+      "id": 4,
+      "number": "04.987654-3",
+      "agency": "7080",
+      "balance": 890.5,
+      "limit": 1200.0
+    },
+    "card": {
+      "id": 4,
+      "number": "xxxx xxxx xxxx 4444",
+      "limit": 2500.0
+    },
+    "features": [
+      {
+        "id": 1,
+        "icon": "💳",
+        "description": "Cartão Virtual"
+      },
+      {
+        "id": 2,
+        "icon": "🔁",
+        "description": "Transferências Ilimitadas"
+      },
+      {
+        "id": 3,
+        "icon": "📊",
+        "description": "Relatórios Financeiros"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "icon": "🎓",
+        "description": "Crédito estudantil com condições especiais até dezembro."
+      },
+      {
+        "id": 2,
+        "icon": "🎁",
+        "description": "Indique um amigo e ganhe R$30 em cashback!"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Roberto Lima",
+    "account": {
+      "id": 5,
+      "number": "05.112233-9",
+      "agency": "9010",
+      "balance": 12500.0,
+      "limit": 10000.0
+    },
+    "card": {
+      "id": 5,
+      "number": "xxxx xxxx xxxx 5555",
+      "limit": 15000.0
+    },
+    "features": [
+      {
+        "id": 1,
+        "icon": "💼",
+        "description": "Conta PJ Simples"
+      },
+      {
+        "id": 2,
+        "icon": "🌐",
+        "description": "Pagamentos Internacionais"
+      },
+      {
+        "id": 3,
+        "icon": "📅",
+        "description": "Agendamento Recorrente"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "icon": "🚀",
+        "description": "Nova linha de crédito para empreendedores. Taxas a partir de 1.99%."
+      },
+      {
+        "id": 2,
+        "icon": "🤖",
+        "description": "Assistente financeiro com IA: acompanhe seus gastos em tempo real."
+      }
+    ]
+  }
+]
