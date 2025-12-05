@@ -16,6 +16,7 @@ Este projeto é uma **réplica funcional e autocontida** da [API original](https
 ---
 
 ## 🧱 Estrutura do Projeto
+```bash
 sdw2023-local/
 ├── mock_data.json          # "Banco de dados" em JSON (persistência local)
 ├── server.py               # Servidor REST com CRUD (GET/POST/PUT/DELETE)
@@ -24,7 +25,7 @@ sdw2023-local/
 ├── .gitignore              # Ignora arquivos temporários (ex: *.pyc, __pycache__)
 ├── README.md               # Este arquivo 📄
 └── LICENSE                 # Licença MIT (opcional)
-
+```
 
 ---
 
@@ -46,6 +47,11 @@ python --version
 ```bash
 git clone https://github.com/harlemsilvas/etl-dio-api-ai.git
 cd etl-dio-api-ai
+
+# (Opcional) Crie um ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/WSL/macOS
+# venv\Scripts\activate   # Windows (PowerShell/CMD)
 ```
 
 ---
@@ -61,7 +67,7 @@ python server.py
 
 ---
 
-4. Teste os endpoints
+### 4. Teste os endpoints
 
 ### ✅ Endpoints Suportados
 
@@ -81,12 +87,21 @@ python server.py
 Exemplo com curl:
 
 ```bash
+# Listar todos
+curl http://localhost:8080/users
+
+# Buscar usuário 1
 curl http://localhost:8080/users/1
+
+# Criar novo usuário
+curl -X POST http://localhost:8080/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Maria Souza","account":{"number":"00.000000-0","agency":"9999","balance":0,"limit":500}}'
 ```
 
 ---
 
-5. (Opcional) Popule com +3 usuários
+### 5. (Opcional) Popule com +3 usuários
 
 ```bash
 python populate_mock.py
@@ -112,23 +127,32 @@ sdw2023_api_url = 'http://localhost:8080'  # ✅ Funciona offline, sem dependên
 ```
 
 
-📦 Integração com Seus Projetos
-Você pode reutilizar este servidor como backend para:
+## 📦 Integração com Seus Projetos
+✅ **Você pode reutilizar este servidor como backend para**:
 
-Scripts de automação com OpenAI (ex: geração de notícias personalizadas);
-Aplicações frontend (Angular, React, Flutter, etc.);
-Testes de integração, pipelines CI/CD locais ou demos.
-Basta apontar sua URL para:
+- Scripts de automação com OpenAI (ex: geração de notícias personalizadas);
+- Aplicações frontend (Angular, React, Flutter, etc.);
+- Testes de integração, pipelines CI/CD locais ou demos.
+- Basta apontar sua URL para:
 ---
 ```python
 sdw2023_api_url = 'http://localhost:8080'
 ```
 ---
 
-🔗 Referências Oficiais
-📚 Repositório Original (DIO)
-🖼️ Mock Backup (GitHub Pages)
-🎨 Figma do App (Santander Dev Week)
+## 📚 Referências Oficiais do projeto Dio Santander
+
+| Recurso | Link | Descrição |
+|--------|------|-----------|
+| **Repositório Oficial (Java 17 + Spring Boot 3)** | [`github.com/digitalinnovationone/santander-dev-week-2023-api`](https://github.com/digitalinnovationone/santander-dev-week-2023-api) | Código-fonte aberto da API original, com OpenAPI/Swagger integrado |
+| **Endpoint de Produção (desativado)** | `https://sdw-2023-prd.up.railway.app` | ⚠️ Serviço temporário no Railway — fora do ar desde o encerramento do evento |
+| **Mock de Backup (JSON estático)** | [`digitalinnovationone.github.io/.../find_one.json`](https://digitalinnovationone.github.io/santander-dev-week-2023-api/mocks/find_one.json) | Versão estática do usuário exemplo — útil para validação de contrato |
+| **Figma (UI/UX do App Santander)** | [Figma — Santander Dev Week 2023](https://www.figma.com/file/89Lwew6J8dK5JzVJc4J6Zq/Santander-Dev-Week-2023) | Projeto de interface utilizado na abstração do domínio da API |
+| **Tecnologias Utilizadas (Oficiais)** | — | Java 17 • Spring Boot 3 • Spring Data JPA • OpenAPI (Swagger) • Railway |
+
+> 💡 *"Este é um código-fonte aberto. Sintam-se à vontade para cloná-lo, modificá-lo e executar localmente ou onde acharem mais interessante!"*  
+> — [Digital Innovation One](https://digitalinnovation.one/)
+
 
 ###📜 Licença
 Este projeto é open-source e inspirado no trabalho da Digital Innovation One.
