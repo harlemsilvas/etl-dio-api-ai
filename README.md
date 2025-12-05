@@ -6,7 +6,9 @@
 Este projeto é uma **réplica funcional e autocontida** da [API original](https://github.com/digitalinnovationone/santander-dev-week-2023-api), desenvolvida durante a Santander Dev Week 2023 pela [Digital Innovation One](https://digitalinnovation.one/), mas agora **totalmente executável em `localhost`**, sem dependência de serviços externos.
 
 ---
+[![Swagger UI](https://img.shields.io/badge/API-Docs-85EA2D?logo=swagger&logoColor=white)](http://localhost:8080/docs)
 
+---
 ## 🎯 Objetivo
 
 - Permitir o uso contínuo dos exercícios propostos (ex: integração com OpenAI para geração de notícias personalizadas) mesmo após o desligamento do endpoint oficial (`https://sdw-2023-prd.up.railway.app`);
