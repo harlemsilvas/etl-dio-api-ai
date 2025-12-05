@@ -111,22 +111,6 @@ python populate_mock.py
 
 ---
 
-## 🔗 Integração com Seus Projetos
-
-Esta API local é compatível **100% com o contrato da API original da Santander Dev Week 2023**, o que permite reutilizá-la como *drop-in replacement* em qualquer projeto existente — especialmente os desenvolvidos durante o evento.
-
-✅ **Use para**:
-- Executar scripts de automação (ex: integração com OpenAI para geração de notícias personalizadas);
-- Desenvolver ou testar frontends (Angular, React, Flutter, Android, iOS) usando `http://localhost:8080` como base;
-- Substituir o endpoint oficial (`https://sdw-2023-prd.up.railway.app`) em demos, apresentações ou entrevistas técnicas;
-- Estudar padrões REST, CRUD, serialização JSON e arquitetura de domínio.
-
-🔧 Basta atualizar a variável de URL no seu código:
-```python
-sdw2023_api_url = 'http://localhost:8080'  # ✅ Funciona offline, sem dependência externa
-```
-
-
 ## 📦 Integração com Seus Projetos
 ✅ **Você pode reutilizar este servidor como backend para**:
 
