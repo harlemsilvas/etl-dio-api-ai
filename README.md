@@ -16,12 +16,14 @@ Este projeto é uma **réplica funcional e autocontida** da [API original](https
 ---
 
 ## 🧱 Estrutura do Projeto
-.
-├── mock_data.json # Banco de dados em JSON (usuários, contas, features, notícias)
-├── server.py # Servidor REST com CRUD (GET/POST/PUT/DELETE)
-├── populate_mock.py # Script para adicionar +3 usuários com ícones em emoji 💸📈
-├── SDW2023.csv # Lista de IDs para processamento (ex: UserID)
-└── README.md # Este arquivo 📄
+sdw2023-local/
+├── mock_data.json          # "Banco de dados" em JSON (persistência local)
+├── server.py               # Servidor REST com CRUD (GET/POST/PUT/DELETE)
+├── populate_mock.py        # Script para adicionar +3 usuários com ícones em emoji (💸📈🤖)
+├── SDW2023.csv             # Lista de IDs (ex: UserID) para processamento em lote
+├── .gitignore              # Ignora arquivos temporários (ex: *.pyc, __pycache__)
+├── README.md               # Este arquivo 📄
+└── LICENSE                 # Licença MIT (opcional)
 
 
 ---
@@ -29,21 +31,33 @@ Este projeto é uma **réplica funcional e autocontida** da [API original](https
 ## 🚀 Como Rodar Localmente
 
 ### 1. Pré-requisitos
+
 - [Python 3.8+](https://www.python.org/)
 - (Opcional) WSL, macOS ou Linux — funciona também no Windows nativo
 
+python --version
+# Saída esperada: Python 3.10.12 (ou similar)
+
+---
+
 ### 2. Clone este repositório
 ```bash
-git clone https://github.com/seu-usuario/sdw2023-local.git
-cd sdw2023-local
+git clone https://github.com/harlemsilvas/etl-dio-api-ai.git
+cd etl-dio-api-ai
+```
 
-3. Inicie o servidor
+---
+### 3. Inicie o servidor
 
+```bash
 python server.py
+```
 
 ➡️ Servidor rodando em: http://localhost:8080
 
 ✅ Escuta em 0.0.0.0, então é acessível tanto do WSL quanto do navegador do Windows.
+
+---
 
 4. Teste os endpoints
 
@@ -56,14 +70,21 @@ Método	Endpoint	Descrição
 
 Exemplo com curl:
 
+```bash
 curl http://localhost:8080/users/1
+```
+
+---
 
 5. (Opcional) Popule com +3 usuários
 
+```bash
 python populate_mock.py
+```
 
 → Adiciona 3 novos registros com ícones em emoji (ex: 📈, 🛡️, 🤖), mantendo a estrutura do domínio original.
 
+---
 
 📦 Integração com Seus Projetos
 Você pode reutilizar este servidor como backend para:
@@ -72,8 +93,9 @@ Scripts de automação com OpenAI (ex: geração de notícias personalizadas);
 Aplicações frontend (Angular, React, Flutter, etc.);
 Testes de integração, pipelines CI/CD locais ou demos.
 Basta apontar sua URL para:
-
+---
 sdw2023_api_url = 'http://localhost:8080'
+---
 
 🔗 Referências Oficiais
 📚 Repositório Original (DIO)
