@@ -35,8 +35,10 @@ sdw2023-local/
 - [Python 3.8+](https://www.python.org/)
 - (Opcional) WSL, macOS ou Linux — funciona também no Windows nativo
 
+```bash
 python --version
 # Saída esperada: Python 3.10.12 (ou similar)
+```
 
 ---
 
@@ -61,12 +63,20 @@ python server.py
 
 4. Teste os endpoints
 
-Método	Endpoint	Descrição
-`GET`	`/users`	Lista todos os usuários
-`GET`	`/users/1`	Retorna usuário com ID = 1
-`POST`	`/users`	Cria novo usuário
-`PUT`	`/users/1`	Atualiza usuário com ID = 1
-`DELETE`	`/users/1`	Remove usuário com ID = 1
+### ✅ Endpoints Suportados
+
+| Método   | Endpoint         | Descrição                     | Exemplo de Uso                          |
+|----------|------------------|-------------------------------|------------------------------------------|
+| `GET`    | `/users`         | Lista todos os usuários       | `GET /users`                             |
+| `GET`    | `/users/{id}`    | Retorna um usuário pelo ID    | `GET /users/1`                           |
+| `POST`   | `/users`         | Cria um novo usuário          | `POST /users` + JSON no corpo            |
+| `PUT`    | `/users/{id}`    | Atualiza um usuário existente | `PUT /users/1` + JSON atualizado         |
+| `DELETE` | `/users/{id}`    | Remove um usuário             | `DELETE /users/1`                        |
+
+> 📝 **Observações**  
+> - Todos os endpoints retornam/consomem `application/json`.  
+> - IDs inválidos (`/users/999`) retornam `404 Not Found`.  
+> - Corpo de requisição malformado retorna `400 Bad Request`.
 
 Exemplo com curl:
 
